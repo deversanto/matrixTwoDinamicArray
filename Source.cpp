@@ -7,18 +7,19 @@ int main()
 
 	int nRows;
 	int nCols;
-	//
-	cout << "Введите количество сторок и колонок" << endl;
+	
+	cout << "Enter the numbre of rows and colomns" << endl;
 	cin >> nRows >> nCols;
 	cout << "Пожалуйста, ваша матрица" << endl;
 
 	int** arr = new int* [nRows];
-	for (int i = 0; i < nRows; i++)
+
+	for (int i = 0; i < nRows; i++) // 1-Step. Matrix creation
 	{
 		arr[i] = new int[nCols];
 	}
 
-	for (int i = 0; i < nRows; i++)
+	for (int i = 0; i < nRows; i++) // 2-Step. Matrix filing
 	{
 		for (int j = 0; j < nCols; j++)
 		{
@@ -26,7 +27,7 @@ int main()
 		}
 	}
 
-	for (int i = 0; i < nRows; i++)
+	for (int i = 0; i < nRows; i++) //3-Step. Matrix display
 	{
 		for (int j = 0; j < nCols; j++)
 		{
@@ -35,13 +36,11 @@ int main()
 		cout << endl;
 	}
 
-
-	for (int i = 0; i < nRows; i++) // delete matrix
+	for (int i = 0; i < nRows; i++) // delete matrix!!!
 	{
 		delete[] arr[i];
 	}
 
 	delete[] arr;
-
 	cin.get();
 }
