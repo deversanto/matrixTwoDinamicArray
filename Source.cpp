@@ -10,7 +10,7 @@ int main()
 	
 	cout << "Enter the numbre of rows and colomns" << endl;
 	cin >> nRows >> nCols;
-	cout << "Пожалуйста, ваша матрица" << endl;
+	cout << "Please your matrix" << endl;
 
 	int** arr = new int* [nRows];
 
