@@ -7,7 +7,7 @@ int main()
 
 	int nRows;
 	int nCols;
-
+	//
 	cout << "Введите количество сторок и колонок" << endl;
 	cin >> nRows >> nCols;
 	cout << "Пожалуйста, ваша матрица" << endl;
@@ -36,7 +36,7 @@ int main()
 	}
 
 
-	for (int i = 0; i < nRows; i++) // delte matrix
+	for (int i = 0; i < nRows; i++) // delete matrix
 	{
 		delete[] arr[i];
 	}
