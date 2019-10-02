@@ -8,15 +8,15 @@ int main()
 	int nRows;
 	int nCols;
 	
-	cout << "Enter the numbre of rows and colomns" << endl;
+	cout << "Enter the number of rows and colomns" << endl; //введите число строк и колонок 2-хмерного массива
 	cin >> nRows >> nCols;
 	cout << "Please your matrix" << endl;
 
-	int** arr = new int* [nRows];
+	int** arr = new int* [nRows]; // создание динамического массива
 
-	for (int i = 0; i < nRows; i++) // 1-Step. Matrix creation
+	for (int i = 0; i < nRows; i++) // 1-Step. Matrix creation 
 	{
-		arr[i] = new int[nCols];
+		arr[i] = new int[nCols]; 
 	}
 
 	for (int i = 0; i < nRows; i++) // 2-Step. Matrix filing
